@@ -12,8 +12,7 @@ def gfg():
    if request.method == "POST":
       film_name = request.form.get("fname")
       return "the film name "+film_name
-   else:
-      return render_template('film.html')
+
 
 
   
