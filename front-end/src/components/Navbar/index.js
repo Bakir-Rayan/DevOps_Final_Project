@@ -15,7 +15,7 @@ const Navbar = () => {
                     </NavLink>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/Contact-us">Contact-us</NavBtnLink>
+                    <NavBtnLink to="/contact-us">Contact-us</NavBtnLink>
                 </NavBtn>
             </Nav>
         </>
