@@ -2,11 +2,7 @@
 
 * {
     font-family: "Rowdies", cursive;
-}
-
-p {
-    font-size: 12px;
-    margin-bottom: 5px;
-    color: black;
-    text-justify: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
