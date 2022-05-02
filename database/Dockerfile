@@ -1,8 +1,17 @@
-FROM mysql:latest
+FROM ubuntu:latest
 
-ENV MYSQL_DATABASE root
+RUN apt-get -y update
 
-ENV MYSQL_ROOT_PASSWORD password
-ADD test_data.sql /docker-entrypoint-initdb.d
+RUN apt-get -y upgrade
 
-EXPOSE 3306
+RUN apt-get install -y sqlite3 libsqlite3-dev
+
+RUN mkdir /db
+
+WORKDIR /db
+
+COPY database.db .
+
+ENTRYPOINT [ "sqlite3" ]
+
+CMD [ "database.db" ]
