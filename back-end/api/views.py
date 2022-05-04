@@ -65,8 +65,8 @@ def get_book_by_name():
 @main.route('/api/books/field/', methods=['GET'])
 def get_book_by_field():
     book_field_id = request.args.get('book_field_id')
-    
-    books_list = Book.query.filter_by(Book_Field_id=get_book_field_id[book_field_id]).all()
+    field_id = get_book_field_id(book_field_id)
+    books_list = Book.query.filter_by(Book_Field_id=field_id).all()
     books = []
 
     for book in books_list:
