@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+export default function About() {
     return (
         <div
             style={{
@@ -13,13 +13,13 @@ function About() {
             }}
         >
             <h1 align="center"> Hi there 👋 I'm Rayan </h1>
-            <h2>-----------------------------------------------------------------------</h2>
+            <h2>»»————-　★　————-««</h2>
             <h2>
             - 🔭 ** This is the work I have done to show up the process of DevOps ** <br />
             - ⚡ ** I learned to use a lot of stuff like Docker, Jenkins and kubernetes ** <br />
             - 💻 ** Also I learned to use React, Flask and Sqlite ** <br />
             </h2>
-            <h2>-----------------------------------------------------------------------</h2>
+            <h2>»»————-　★　————-««</h2>
             <h1 align="center">Connect with me:
                 <p align="center">
                     <a href="https://linkedin.com/in/rayan-bakir/" target="blank">
@@ -30,9 +30,6 @@ function About() {
                     </a>  
                 </p>
             </h1>
-            <h2>-----------------------------------------------------------------------</h2>
         </div>
     );
 }
-
-export default About;

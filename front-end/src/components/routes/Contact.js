@@ -48,7 +48,7 @@ const Contact = () => {
                         }
                     }>
                         <h1>Let's Talk</h1>
-                        <h2>I'm always happy to talk to you just send me an e-mail</h2>
+                        <h2>Send me an e-mail at: </h2>
                         <h3>rayanbak257@gmail.com</h3>
                     </div>
                 </ParallaxLayer>

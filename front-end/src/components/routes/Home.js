@@ -1,18 +1,21 @@
 import React from "react";
 
-function Home() {
+
+export default function Home() {
     return (
         <div
             style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
                 height: "90vh",
+                backgroundColor: "#e6f7ff",
+                display: "flex", 
+
+                alignItems: "center",
+                flexDirection: "column"
             }}
         >
-            <h1>Hello</h1>
+            <h1>Bookshelf </h1>
+            <img></img>
+            <h2>What is it ?</h2>
         </div>
     );
 }
-
-export default Home;
