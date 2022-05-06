@@ -67,7 +67,7 @@ class Shelf extends React.Component {
                 <div>
                     <form >
                         <select value={this.state.selectedValue} onChange={this.handleChange}>
-                            <option value="" selected="selected"></option>
+                            <option value="" selected="selected">Select</option>
                             <option value="get_all_books">Get all books </option>
                             <option value="get_book_by_fullname">Get a book by it's full-name </option>
                             <option value="get_book_by_partialname">Get all books containing a specific word </option>

@@ -7,7 +7,7 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Shelf from "./routes/Shelf";
 
-function App() {
+export default function App() {
     return (
         <Router>
             <Navbar />
@@ -21,5 +21,3 @@ function App() {
         </Router>
     );
 }
-
-export default App;
