@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('build and run') {
             steps {
-                sh "docker compose build -d"      
+                sh "docker compose build"      
             }
         }
         stage('Publish image to Docker Hub') {
