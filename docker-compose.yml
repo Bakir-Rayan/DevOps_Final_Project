@@ -1,17 +1,27 @@
+version: '3'
 services:
   api:
-    build: ./back-end/
+    build:
+      dockerfile: Dockerfile 
+      context: ./back-end/
+    restart: on-failure
+    container_name: api
     ports:
       - "5000:5000"
     volumes:
       - ./:/api
-    environment:
-      FLASK_ENV: development
+    labels:
+      kompose.service.type: LoadBalancer
   front-end:
-    build: ./front-end
+    build: 
+      dockerfile: dockerfile
+      context: ./front-end
+    restart: on-failure
     ports:
       - "2000:2000"
     volumes:
       - ./:/app
     depends_on:
       - api
+    labels:
+      kompose.service.type: LoadBalancer

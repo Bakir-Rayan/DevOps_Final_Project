@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    io.kompose.service: front-end
+  name: front-end
+spec:
+  containers:
+  - image: front-end
+    name: front-end
+    ports:
+    - containerPort: 2000
+    resources: {}
+    volumeMounts:
+    - mountPath: /app
+      name: front-end-claim0
+  restartPolicy: OnFailure
+  volumes:
+  - name: front-end-claim0
+    persistentVolumeClaim:
+      claimName: front-end-claim0
+status: {}
