@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                sh 'script.sh'
+                sh './script.sh'
             }
         }
     }
