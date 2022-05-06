@@ -16,9 +16,7 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps{
-                withKubeCredentials([[credentialsId: 'kubernetes']]) {
-                    sh 'kubectl apply -f ./kubernetes'
-                }
+                sh 'kubectl apply -f ./kubernetes'
             }
         }
         stage('get minikube services') {
