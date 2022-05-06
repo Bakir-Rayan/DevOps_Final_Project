@@ -3,4 +3,4 @@ just a simple project
 
 you can take it test it
 
-test
+clone it and use jenkins it will do every step for you 
