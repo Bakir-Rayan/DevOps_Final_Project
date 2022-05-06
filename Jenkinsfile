@@ -14,5 +14,8 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Kubernetes') {
+            steps {
+                sh 'scripts.sh'
     }
 }
