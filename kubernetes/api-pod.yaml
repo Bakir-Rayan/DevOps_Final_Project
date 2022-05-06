@@ -6,8 +6,9 @@ metadata:
   name: api
 spec:
   containers:
-  - image: api
+  - image: rayanbak257/api:latest
     name: api
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 5000
     resources: {}

@@ -6,8 +6,9 @@ metadata:
   name: front-end
 spec:
   containers:
-  - image: front-end
+  - image: rayanbak257/front-end:latest
     name: front-end
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 2000
     resources: {}
