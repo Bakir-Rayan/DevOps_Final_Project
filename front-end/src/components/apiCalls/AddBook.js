@@ -46,7 +46,7 @@ export default function AddBook() {
             .then(data => setMessage(data.message)).catch(err => console.log(err));
         }
         
-    }, [submitted]);
+    }, [submitted, book]);
     
     return submitted ? (
         <div 

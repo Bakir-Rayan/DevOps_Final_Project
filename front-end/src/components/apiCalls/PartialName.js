@@ -16,7 +16,7 @@ export default function PartialName() {
             }));
         }
         
-    }, [submitted]);
+    }, [submitted, url]);
     return submitted ? (
         <div 
             style={{ 

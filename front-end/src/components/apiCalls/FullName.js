@@ -4,7 +4,6 @@ export default function FullName() {
     const [book_name , setBookName] = useState("");
     const [submitted, setSubmitted] = useState(false);
     const [books, setBooks] = useState([]);
-    const [message, setMessage] = useState("");
     const params = { book_name: book_name };
     const url = "/api/books/fullname/?book_name=" + params.book_name;
 
@@ -14,9 +13,9 @@ export default function FullName() {
             .then(response => 
             response.json().then(data => {
                 setBooks(data.Book);
-            })).then(msg => setMessage(msg)).catch(err => setSubmitted(false));
+            })).catch(err => setSubmitted(false));
         }
-    }, [submitted]);
+    }, [submitted, url]);
     
     return submitted ? (
         

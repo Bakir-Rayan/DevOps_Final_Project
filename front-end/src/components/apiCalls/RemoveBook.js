@@ -11,7 +11,7 @@ export default function RemoveBook() {
             }).then(response => response.json())
             .then(data => setMessage(data.message)).catch(err => console.log(err));
         }
-    }, [submitted]);
+    }, [submitted, book_id]);
     
     return submitted ? (
         <div 

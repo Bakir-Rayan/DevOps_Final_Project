@@ -30,9 +30,8 @@ export default function Field() {
                 setBooks(data.Book);
             }));
         }
-        console.log(field_id);
         
-    }, [submitted]);
+    }, [submitted, url]);
     return submitted ? (
         <div 
             style={{ 

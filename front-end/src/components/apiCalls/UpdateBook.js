@@ -48,7 +48,7 @@ export default function UpdateBook() {
             .then(data => setMessage(data.message)).catch(err => console.log(err));
         }
         
-    }, [submitted]);
+    }, [submitted, book]);
     
     return submitted ? (
         <div 
