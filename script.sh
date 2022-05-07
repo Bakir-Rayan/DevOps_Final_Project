@@ -1,4 +1,4 @@
-##!/bin/bash
+#!/bin/bash
 
 kubectl apply -f ./kubernetes
 minikube service front-end --url

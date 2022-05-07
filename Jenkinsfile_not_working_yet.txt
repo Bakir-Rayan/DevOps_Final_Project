@@ -14,6 +14,11 @@ pipeline {
                 }
             }
         }
+        stage('start minikube') {
+            steps {
+                sh 'minikube start'
+            }
+        }
         stage('Deploy to Kubernetes') {
             steps{
                 sh 'kubectl apply -f ./kubernetes'
