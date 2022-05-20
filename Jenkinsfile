@@ -19,11 +19,5 @@ pipeline {
                 sh 'kubectl apply -f ./kubernetes'
             }
         }
-        stage('get minikube services') {
-            steps{
-                sh 'minikube service front-end --url'
-                sh 'minikube service api --url'
-            }
-        }
     }
 }
