@@ -15,7 +15,7 @@ pipeline {
             }
         }
         stage('Deploy to Kubernetes') {
-            steps{
+            withKubeConfig([credentialsId: 'mykubeconfig', serverUrl: 'https://kubernetes.default.svc.cluster.local']) {
                 sh 'kubectl apply -f ./kubernetes'
             }
         }
